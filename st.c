@@ -534,10 +534,9 @@ void calculatePerpendicular(const double * basePoint, const double * testPoint,
 
 }
 
+double oneSideTD(double *imageOne, double *imageTwo, int width, int height){
 
-double oneSideTD(double *imageOne, double *imageTwo){
-
-  int width=28,height=28,choice[]={1,1,1,1,1,1,0,0,0};
+  int choice[]={1,1,1,1,1,1,0,0,0};
   double dist, background=0.0;
 
   dist=tangentDistance(imageOne, imageTwo, height, width, choice, background);
